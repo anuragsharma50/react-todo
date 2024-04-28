@@ -1,38 +1,104 @@
+*,html,body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #2d2d2d;
+  color: #e5e5e5;
+  font-family: 'Caveat', cursive;
+}
+
 .App {
-  text-align: center;
+  width: 450px;
+  min-height: 600px;
+  margin: 8px auto;
+  padding: 16px;
+  border: 2px solid white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.input-box{
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #a7a7a7;
+  font-size: 18px;
   color: white;
+  padding: 5px;
+  flex: 1;
+  margin-right: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  width: 75px;
+  height: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.todo {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.check-box {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+.check-box:checked + label {
+  text-decoration: line-through;
+}
+
+.check-box:active, .check-box:checked:active {
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.check-box:checked {
+background-color: transparent;
+border: 1px solid #adb8c0;
+box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+color: #99a1a7;
+}
+
+.check-box:checked:after {
+content: '\2714';
+  font-size: 28px;
+  position: absolute;
+  top: -13px;
+  left: 3px;
+  color: #e5e5e5;
+}
+
+label {
+  font-size: 24px;
+  padding: 5px;
+}
+
+.edit {
+  margin-left: auto;
+}
+
+#delete{
+  margin-left: 8px;
+}
+
+@media screen and (max-width : 576px) {
+  .App {
+    border: none;
   }
 }

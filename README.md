@@ -13,6 +13,6 @@ A todo list build with reatc and jsonplaceholder API
 
 ## Folder structure
 
-APP.js using 2 components and hadling todos state.
-InputContainer.jsx component for add and updating todos
-Todo.jsx component for showing todos and deleting it.
+- APP.js using 2 components and hadling todos state.
+- InputContainer.jsx component for add and updating todos
+- Todo.jsx component for showing todos and deleting it.

@@ -14,5 +14,6 @@ A todo list build with reatc and jsonplaceholder API
 ## Folder structure
 
 - APP.js using 2 components and hadling todos state.
-- InputContainer.jsx component for add and updating todos
+- APP.js is mapping todos to Todo component
+- InputContainer.jsx component for adding and updating todo
 - Todo.jsx component for showing todos and deleting it.

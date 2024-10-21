@@ -1,6 +1,6 @@
 # React todo List
 
-A todo list build with reatc and jsonplaceholder API
+A todo list build with react and jsonplaceholder API
 
 - using useReducer hook to store todo data
 - using API to get inital state, then updating state and API also (API is not getting actually updated but returning response like it is updated)
